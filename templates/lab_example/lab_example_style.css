@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@font-face {
+  font-family: gow;
+  src: url("../fonts/-gow.ttf") format("truetype"); }
+
+h1, .a-h1 {
+  font-size: 75px;
+  line-height: 1; }
+
+h2, .a-h2 {
+  font-size: 65px;
+  line-height: 1; }
+
+h3, .a-h3 {
+  font-size: 75px; }
+
+h4, .a-h4 {
+  font-size: 75px; }
+
+h5, .a-h5 {
+  font-size: 75px; }
+
+h6, .a-h6 {
+  font-size: 75px; }
+
+@media (max-width: 767px) {
+  h1, .a-h1 {
+    font-size: calc( 22px + (26 - 22) * ((100vw - 320px) / (767 - 320))); }
+  h2, .a-h2 {
+    font-size: calc( 14px + (20 - 14) * ((100vw - 320px) / (767 - 320))); } }
+
+@media (min-width: 768px) {
+  h1, .a-h1 {
+    font-size: calc( 26px + (45 - 26) * ((100vw - 768px) / (991 - 768))); }
+  h2, .a-h2 {
+    font-size: calc( 20px + (35 - 20) * ((100vw - 768px) / (991 - 768))); } }
+
+@media (min-width: 992px) {
+  h1, .a-h1 {
+    font-size: calc( 45px + (75 - 45) * ((100vw - 992px) / (1920 - 992))); }
+  h2, .a-h2 {
+    font-size: calc( 35px + (65 - 35) * ((100vw - 992px) / (1920 - 992))); } }
+
+@media (min-width: 1200px) {
+  h1, .a-h1 {
+    font-size: 75px; }
+  h2, .a-h2 {
+    font-size: 65px; } }
+
+/*# sourceMappingURL=lab_example_style.css.map */
