@@ -6,7 +6,6 @@
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
-!wp-content/themes/
 
 # ignore these plugins
 wp-content/plugins/hello.php
@@ -23,5 +22,4 @@ node_modules/
 *.sqlite
 
 *.DS_Store
-node_modules
 
