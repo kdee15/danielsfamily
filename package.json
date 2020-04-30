@@ -59,7 +59,7 @@
     "@angular/core": "^4.2.0",
     "chart.js": "^2.8.0",
     "gulp-clean": "^0.4.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.7",
     "readmore-js": "^2.2.1",
     "select2": "^4.0.7",
