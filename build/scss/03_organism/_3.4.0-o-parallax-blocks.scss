@@ -5,25 +5,28 @@
 // A.1. GENERAL CAROUSEL STUFF ----------------------------------------------------------------------------------------
 
 .o-parallax-wrapper { display: block; width: 100%; height: 100vh; background-color: pink; position: relative; overflow: hidden;
-  .o-fam { position: absolute; border-radius: 100%; }
+  .o-fam { position: absolute; border-radius: 100%; overflow: hidden;
+
+  }
   .layer-1 { background: blue;  }
   .layer-2 { background: yellow;  }
   .layer-3 { background: green;  }
   .layer-4 { background: orange;  }
-
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A.2. FAMILY BLOCKS -------------------------------------------------------------------------------------------------
 
-.a-icon-circle { @include position(absolute, 0); width: 100%; height: 100%; }
+.a-icon-circle { @include position(absolute, 0); width: 100%; height: 100%; z-index: 10; }
 
-.fam-0 { width: 80%; height: 80%; top:10%; left: 10%; }
-.fam-r { @include aspect-ratio(26%, 100%); bottom: 3%; left: 10%; }
-.fam-c { @include aspect-ratio(24%, 100%); bottom: 20%; right: 2%; }
-.fam-k { @include aspect-ratio(18%, 100%); top: 15%; right: 20%; }
-.fam-m { @include aspect-ratio(16%, 100%); top: 15%; left: 10%; }
+.fam-0 { width: 80%; height: 80%; top:10%; left: 10%; z-index: 100; }
+.fam-r { @include aspect-ratio(26%, 100%); bottom: 3%; left: 10%; z-index: 110; }
+.fam-c { @include aspect-ratio(24%, 100%); bottom: 20%; right: 2%; z-index: 120; }
+.fam-k { @include aspect-ratio(18%, 100%); top: 15%; right: 20%; z-index: 130; }
+.fam-m { @include aspect-ratio(16%, 100%); top: 15%; left: 10%; z-index: 140; }
+
+.a-site-title { position: absolute; z-index: 100; bottom: 3%; right: 1%; }
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 

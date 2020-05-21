@@ -3,23 +3,21 @@
 // A. FONT SOURCE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. FONTS ---------------------------------------------
-// A.1.1. FONTS -------------------------------------------
 
+// A.1.1. FONT IMPORTS ------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Raleway:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-
-$default: Roboto, Helvetica, 'Arial Black', sans-serif;
-
-@font-face {
-  font-family: gow;
-  src: url('../fonts/-gow.ttf') format("truetype");
-}
 
 // A.1.1. END ---------------------------------------------
 
 // A.1.2. FONTS -------------------------------------------
 
-$default      : Roboto, helvetica, arial, sans-serif;
-$gow          : gow, helvetica, arial, sans-serif;
+$default:   Roboto, Helvetica, 'Arial Black', sans-serif;
+$raleway:   'Raleway', sans-serif;
+$head:      'Loved by the King', cursive;
+
+h1 { font-family: $head; }
 
 // A.1.2. END ---------------------------------------------
 
@@ -38,22 +36,22 @@ $view-max-sm:    991;
 $view-min-md:    992;
 $view-max-md:    1920;
 
-$h1-min-xs:    22;
-$h1-max-xs:    26;
+$h1-min-xs:    40;
+$h1-max-xs:    60;
 $h2-min-xs:    14;
 $h2-max-xs:    20;
 
-$h1-min-sm:    26;
-$h1-max-sm:    45;
+$h1-min-sm:    60;
+$h1-max-sm:    80;
 $h2-min-sm:    20;
 $h2-max-sm:    35;
 
-$h1-min-md:    45;
-$h1-max-md:    75;
+$h1-min-md:    80;
+$h1-max-md:    90;
 $h2-min-md:    35;
 $h2-max-md:    65;
 
-$h1-max:       75;
+$h1-max:       90;
 $h2-max:       65;
 $h3-max:       75;
 $h4-max:       75;

@@ -60,12 +60,48 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 // A.3 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A.4 CUSTOM CONTENT TYPES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.4.1. FAMILY PHOTOS -----------------------------------
+
+function carousel() {
+  $labels = array(
+    'Title'              => _x( 'Carousel', 'post type general name' ),
+    'singular_name'      => _x( 'Carousel Pics', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'Carousel Pic' ),
+    'add_new_item'       => __( 'Add New Carousel Pic' ),
+    'edit_item'          => __( 'Edit Carousel' ),
+    'new_item'           => __( 'New Carousel Pic' ),
+    'all_items'          => __( 'All Carousel Pics' ),
+    'view_item'          => __( 'View Carousel' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Carousel'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Carousel Pics',
+    'public'        => true,
+    'menu_position' => 3,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'carousel', $args );
+}
+
+add_action( 'init', 'carousel' );
+
+
+// A.4.1. END ---------------------------------------------
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.5 COSTOM TAXONOMIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 // A.5 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 // A.X BREADCRUMBS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

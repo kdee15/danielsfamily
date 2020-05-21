@@ -41,6 +41,7 @@ function initStickyBlocks() {
       $layer_2 = $('.layer-2'),
       $layer_3 = $('.layer-3'),
       $layer_4 = $('.layer-4'),
+      $layer_5 = $('.layer-5'),
       $container = $('body'),
       container_w = $container.width(),
       container_h = $container.height();
@@ -53,6 +54,17 @@ function initStickyBlocks() {
 
     left = container_w / 2 - pos_x;
     top  = container_h / 2 - pos_y;
+
+    TweenMax.to(
+      $layer_5,
+      1,
+      {
+        css: {
+          transform: 'translateX(' + left / 90 + 'px) translateY(' + top / 90 + 'px)'
+        },
+        ease:Expo.easeOut,
+        overwrite: 'all'
+      });
 
     TweenMax.to(
       $layer_4,
