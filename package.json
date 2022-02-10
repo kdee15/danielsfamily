@@ -45,7 +45,7 @@
     "merge-stream": "^1.0.1",
     "natives": "^1.1.6",
     "ng-animate": "^0.3.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "owl.carousel": "^2.3.4",
     "postcss": "^5.2.17",
     "postcss-scss": "^0.4.1",
